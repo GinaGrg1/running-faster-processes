@@ -19,6 +19,15 @@ Tips and tricks on running and checking processes, HTTP endpoints, caching, et e
 	cd wrk
 	make
 	sudo cp wrk /usr/local/bin
-To use wrk:
-	$ wrk http://localhost:8080/check_ip/1.0.0.4
+	To use wrk:
+		$ wrk http://localhost:8080/check_ip/1.0.0.4
+
+## InfluxDB & Chronograf on docker
+	docker run \
+    	-p 8086:8086 \
+    	-p 8089:8089/udp \
+    	-v ${pwd}/influxdb.conf:/influxdb.conf \
+    	influxdb:1.4-alpine -config /influxdb.conf &
+
+	docker run --network=host chronograf:1.3-alpine
  
