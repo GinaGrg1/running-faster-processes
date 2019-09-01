@@ -1,6 +1,6 @@
 aiohttp==3.0.7
 asyncpg==0.15.0
-celery==4.1.0
+celery==4.1.1
 uwsgi==2.0.15
 flask==0.12.2
 gunicorn==19.7.1
@@ -9,7 +9,7 @@ msgpack-python==0.4.8
 pillow==4.3.0
 psycopg2==2.7.3.2
 pyzmq==16.0.3
-redis==2.10.6
+redis==3.2.0
 requests==2.18.4
 pybloom_live==2.3.1
 influxdb==5.0.0
